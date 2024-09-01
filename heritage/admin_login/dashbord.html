@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="..\assets\css\bootstrap.css">
+    <link rel="stylesheet" href="..\assets\js\bootstrap.bundle.js">
+    <link rel="stylesheet" href="..\assets\css\mycss.css">
+    <link rel="stylesheet" href="..\assets\js\myjs.js"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+<!-- Header -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-secondary fixed-top">
+        <div class="container">
+            <!-- Toggle Button for Sidebar -->
+            <button class="btn btn-outline-primary me-2" id="sidebarToggle"> 
+                <span class="navbar-toggler-icon btn-primary"></span>
+            </button>
+
+            <!-- Logo -->
+            <a class="navbar-brand text-white" href="#">
+                Women Safety
+            </a>
+        </div>
+    </nav>
+
+    <!-- Sidebar -->
+    <div id="sidebar" class="sidebar bg-dark ">
+        <ul class="nav flex-column p-3">
+            <li class="nav-item hov ">
+                <a class="nav-link text-white " href="dashbord.html">Dashboard</a>
+            </li>
+            <li class="nav-item hov">
+                <a class="nav-link text-white" href="allUser.html">All User</a>
+            </li>
+            <li class="nav-item hov">
+                <a class="nav-link text-white" href="f_user.html">Females</a>
+            </li>
+            <li class="nav-item hov">
+                <a class="nav-link text-white" href="m_user.html">Male</a>
+            </li>
+            <li class="nav-item hov">
+                <a class="nav-link text-white" href="#">Complaint</a>
+            </li>
+            <li class="nav-item hov">
+                <a class="nav-link text-white" href="sos_table.html">SOS</a>
+            </li>
+            <li class="nav-item hov">
+                <a class="nav-link text-white" href="">Alerts</a>
+            </li>
+            <li class="nav-item hov">
+                <a class="nav-link text-white" href="hotspots.html">Hotspots</a>
+            </li>
+            <li class="nav-item hov">
+                <a class="nav-link text-danger fw-bold " href="admin_login.php?id" >Log Out </a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="content mt-10">
+        <div class="container mt-4">
+            <div class="row">
+                <div class="col-md-8">
+                    <!-- Welcome Section -->
+                    <div class="welcome-banner mt">
+                        <h2>Hi Welcome <span id="">Kanishk</span></h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi, in.</p>
+                    </div>
+                    <!-- Welcome Section End -->
+
+                    <div class="row">
+                        <!-- Example Cards -->
+                        <div class="col-md-3 col-sm-6 mb-4">
+                            <a href="allUser.html" class="text-decoration-none">
+                                <div class="card">
+                                    <div class="card-body text-center">
+                                        <div class="icon">
+                                            <i class="fa-solid fa-user"></i>
+                                        </div>
+                                        <h5 id="userCount" class="card-title">6</h5>
+                                        <p class="card-text">All Users</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-3 col-sm-6 mb-4">
+                            <a href="f_user.html" class="text-decoration-none">
+                                <div class="card">
+                                    <div class="card-body text-center">
+                                        <div class="icon">
+                                            <i class="fa-solid fa-child-dress"></i>
+                                        </div>
+                                        <h5 id="femaleCount" class="card-title">2</h5>
+                                        <p class="card-text">Females</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-3 col-sm-6 mb-4">
+                            <a href="m_user.html" class="text-decoration-none">
+                                <div class="card">
+                                    <div class="card-body text-center">
+                                        <div class="icon">
+                                            <i class="fa-solid fa-child"></i>
+                                        </div>
+                                        <h5 id="maleCount" class="card-title">4</h5>
+                                        <p class="card-text">Male</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-md-3 col-sm-6 mb-4">
+                            <a href="complaints.html" class="text-decoration-none">
+                                <div class="card">
+                                    <div class="card-body text-center">
+                                        <div class="icon">
+                                            <i class="fa-solid fa-copy"></i>
+                                        </div>
+                                        <h5 id="complaintCount" class="card-title">Loading...</h5>
+                                        <p class="card-text">Complaint</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-md-3 col-sm-6 mb-4">
+                            <a href="sos_table.html" class="text-decoration-none">
+                                <div class="card">
+                                    <div class="card-body text-center">
+                                        <div class="icon">
+                                            <i class="fa-solid fa-land-mine-on"></i>
+                                        </div>
+                                        <h5 id="sosCount" class="card-title">0</h5>
+                                        <p class="card-text">SOS</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+
+
+
+                        <div class="col-md-3 col-sm-6 mb-4">
+                            <a href="alerts.html" class="text-decoration-none">
+                                <div class="card">
+                                    <div class="card-body text-center">
+                                        <div class="icon">
+                                            <i class="fa-solid fa-triangle-exclamation"></i>
+                                        </div>
+                                        <h5 id="alertsCount" class="card-title">5</h5>
+                                        <p class="card-text">Alerts</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-md-3 col-sm-6 mb-4">
+                            <a href="hotspots.html" class="text-decoration-none">
+                                <div class="card">
+                                    <div class="card-body text-center">
+                                        <div class="icon">
+                                            <i class="fa-solid fa-skull-crossbones"></i>
+                                        </div>
+                                        <h5 id="hotspotsCount" class="card-title">4</h5>
+                                        <p class="card-text">Hotspots</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- Add other cards here -->
+                    </div>
+                </div>
+
+                <div class="col-md-4 d-none d-md-block">
+                <!-- Sidebar SOS -->
+                <div class="d-none d-md-block">
+                    <h1 class="text-center text-danger">SOS Alert</h1>
+                    <div class=" mt-4">
+                        <div class="table-wrapper">
+                            <div class="table-wrapper">
+                                <table class="table table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th>ID</th>
+                                            <th>Username</th>
+                                            <th>Address</th>
+                                            <th>Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="sosTableDashBord">
+                                        <!-- remove to -->
+                                    <tr>
+                                        <td>1</td>
+                                        <td>alice</td>
+                                        <td>123 Wonderland Ave</td>
+                                         <td><a href="userSOS.php?id=1" class="btn btn-primary">View </a></td>
+                                    </tr>
+                                        
+                                        <!-- remove upto -->
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="..\assets\js\bootstrap.bundle.js"></script>
+    <script src="..\assets\js\myjs.js"></script>
+    <script src="..\assets\js\forDataBase.js"></script>
+
+
+
+
+</body>
+</html>

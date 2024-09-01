@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="..\assets\css\bootstrap.css">
+   <link rel="stylesheet" href="..\assets\js\bootstrap.bundle.js">
+   <link rel="stylesheet" href="..\assets\css\mycss.css">
+   <link rel="stylesheet" href="..\assets\js\myjs.js"> 
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+
+
+
+
+
+
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-secondary fixed-top">
+        <div class="container">
+            <!-- Toggle Button for Sidebar -->
+            <button class="btn btn-outline-primary me-2" id="sidebarToggle"> 
+                <span class="navbar-toggler-icon btn-primary"></span>
+            </button>
+
+            <!-- Logo -->
+            <a class="navbar-brand text-white" href="#">
+                Women Saefty
+            </a>
+        </div>
+    </nav>
+
+    <!-- Sidebar -->
+    <div id="sidebar" class="sidebar bg-dark ">
+    <ul class="nav flex-column p-3">
+            <li class="nav-item hov ">
+                <a class="nav-link text-white " href="dashbord.html">Dashboard</a>
+            </li>
+            <li class="nav-item hov">
+                <a class="nav-link text-white" href="allUser.html">All User</a>
+            </li>
+            <li class="nav-item hov">
+                <a class="nav-link text-white" href="f_user.html">Females</a>
+            </li>
+            <li class="nav-item hov">
+                <a class="nav-link text-white" href="m_user.html">Male</a>
+            </li>
+            <li class="nav-item hov">
+                <a class="nav-link text-white" href="#">Complaint</a>
+            </li>
+            <li class="nav-item hov">
+                <a class="nav-link text-white" href="sos_table.html">SOS</a>
+            </li>
+            <li class="nav-item hov">
+                <a class="nav-link text-white" href="">Alerts</a>
+            </li>
+            <li class="nav-item hov">
+                <a class="nav-link text-white" href="hotspots.html">Hotspots</a>
+            </li>
+            <li class="nav-item hov">
+                <a class="nav-link text-danger fw-bold " href="admin_login.php?id" >Log Out </a>
+            </li>
+        </ul>
+    </div>
+
+
+    <div class="d-none d-md-block">
+                    <h1 class="text-center text-danger">Female User</h1>
+                    <div class=" mt-4">
+                        <div class="table-wrapper">
+                            <div class="table-wrapper">
+                                <table class="table table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th>ID</th>
+                                            <th>Username</th>
+                                            <th>Email Id</th>
+                                            <th>Device_M No.</th>
+                                            <th>Profile</th>
+                                            <th>Safety Info</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="userTableFemale">
+                                        <!-- remove to -->
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Kansihk Raj</td>
+                                        <td>kanishkraj600@gmail.com</td>
+                                        <th>524.552.5255.5</th>
+                                        <td><a href="profile.php?id=1" class="btn btn-primary">View </a></td>
+                                        <td><a href="userSafeInfo.php?id=1" class="btn btn-danger">Info </a></td>
+                                    </tr>                                    <tr>
+               
+
+                                        <!-- remove upto -->
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+<style>
+    .table-wrapper {
+    width: 91%; 
+    margin-left: auto; 
+    margin-right: 0;  
+}
+
+.table {
+    width: 100%; 
+}
+
+</style>
+
+        <!-- Bootstrap JS and dependencies -->
+        <script src="..\assets\js\bootstrap.bundle.js"></script>
+        <script src="..\assets\js\myjs.js"></script>
+        <script src="..\assets\js\forDataBase.js"></script>
+
+
+</body>
+</html>

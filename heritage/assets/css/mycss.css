@@ -1,0 +1,128 @@
+body {
+    padding-top: 56px; /* Adjust based on header height */
+    background-color: #F8F9FA;
+}
+
+.sidebar {
+    position: fixed;
+    /* top: 0; */
+    left: 0;
+    height: 100%;
+    width: 250px;
+    background-color: #f8f9fa;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+    transform: translateX(0); /* Sidebar is visible by default */
+    transition: transform 0.3s ease;
+}
+.hov:hover{
+    background: #333;
+    border-radius: 20px;
+
+}
+
+.sidebar.hide {
+    transform: translateX(-250px); /* Hide sidebar */
+}
+
+@media (min-width: 500px) {
+    .content {
+        margin-left: 250px; /* Adjust margin for content area */
+    }
+    .sidebar {
+        transform: translateX(0); /* Always visible for width >= 500px */
+    }
+}
+
+@media (max-width: 499px) {
+    .content {
+        margin-left: 0; /* No margin on smaller screens */
+    }
+}
+
+.sidebar .nav-link {
+    color: #000;
+}
+
+/* welcome message */
+.welcome-banner {
+    background: linear-gradient(90deg, #A1FFCE 0%, #FAFFD1 100%);
+    padding: 20px;
+    border-radius: 10px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+/* card */
+
+
+.card .card-body {
+    padding: 20px;
+}
+
+.card .card-title {
+    font-size: 24px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.card .card-text {
+    font-size: 16px;
+    color: #666;
+}
+
+.icon {
+    font-size: 40px;
+    color: #4e73df;
+}
+
+.card-link {
+    text-decoration: none;
+    color: inherit;
+}
+.card {
+    transition: transform 0.3s ease;
+    background-color: #FAFFD1;
+    border-radius: 20px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.icon {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+/* Default styles for SOS section */
+/* .col-md-3.d-none.d-md-block {
+    display: inline;
+    background: #000;
+} */
+
+/* Responsive styles for screens less than 768px */
+@media (max-width: 767.98px) {
+    .col-md-3.d-none.d-md-block {
+        display: block;
+        width: 100%;
+        margin-top: 20px; /* Adjust margin as needed */
+    }
+}
+
+.hight{
+    height: 100hv;
+}
+
+/* sos tble dashbord */
+ /* .table-container {
+    height: 80vh; 
+    overflow-y: auto;
+}  */
+.table-wrapper {
+    max-height: 500px; 
+    overflow-y: auto; 
+} 
+
+/* All user */
+.manage{
+    width: 700px;
+}
